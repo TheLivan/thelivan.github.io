@@ -1,0 +1,494 @@
+/*!
+ * By Alex_Shev
+ * vk.com/alex_shev228
+ */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #3e3e3e;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ffa338;
+}
+
+
+@font-face {
+    font-family: matrix;
+    src:url('../fonts/matrix.ttf')
+}
+
+
+@font-face {
+    font-family: Patrick Hand;
+    src:url('../fonts/PatrickHand-Regular.ttf')
+}
+
+
+
+body { 
+
+  font-family: 'Patrick Hand', sans-serif; 
+  color: white!important;
+ 
+
+} 
+
+.bg {
+
+   list-style:none;
+   z-index:-2; 
+}
+
+.bg,
+.bg:after {
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+}
+
+
+.bg:after { 
+    content: '';
+    background: transparent url(../images/bg.jpg) repeat top;
+}
+
+
+.title-name {
+
+  text-align: center;
+  font-family: Patrick Hand;
+  font-size: 50px;
+}
+
+
+
+/* ---- particles.js container ---- */ 
+
+#particles-js {
+   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   
+} 
+
+.content {
+  
+   top: 4rem;
+   position: absolute;
+   left: 0;
+   right: 0;
+
+}
+
+.block-portfolio {
+
+  background: rgba(22, 22, 22, 0.76);
+  border-radius: 20px;
+  max-width: 800px;
+  margin: auto;
+
+}
+
+
+.avatar-img {
+
+  border-radius: 10px;
+
+}
+
+
+.avatar-img-mobile {
+
+  border-radius: 10px;
+  width: 100%;
+
+}
+
+
+.about-me {
+
+  border-radius: 10px;
+  background: rgba(39, 39, 39, 0.66);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 100%;
+  font-family: Patrick Hand;
+  font-size: 22px;
+  padding: 14px;
+  transition: 0.5s;
+
+}
+
+.block-info:hover,
+.about-me:hover {
+
+  background-color: #313131;
+
+}
+
+
+.block-matrix-text {  
+
+   font-family: matrix;
+   background: linear-gradient(rgb(21 16 26 / 60%),  rgb(21 16 26 / 60%)), url(../images/matrix.gif) no-repeat;
+   text-align: center;
+   font-size: 40px;
+   border-radius: 10px;
+   line-height: 1.5;
+   transition: 0.5s;
+   cursor: pointer;
+
+}
+
+.block-matrix-text:hover {
+
+   background: linear-gradient(rgb(21 16 26 / 20%),  rgb(21 16 26 / 20%)), url(../images/matrix.gif) no-repeat;
+   
+}
+
+
+.blink {
+
+  animation-name: blink;
+  animation-duration: .6s;
+  animation-timing-function: steps(2, end);
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes blink {
+     0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+
+.block-info {
+  
+  font-size: 24px;
+  font-family: Patrick Hand;
+  border-radius: 10px;
+  background: rgba(39, 39, 39, 0.66);
+  text-align: center;
+  transition: 0.5s;
+
+}
+
+
+.block-info .icon-soft {
+
+    cursor: pointer;
+    will-change: transform;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background: white;
+    margin: 4px;
+    transition: 0.5s;
+
+}
+
+
+.block-info .icon-soft:hover {
+
+    -moz-transform: scale(1.04)!important;
+    -ms-transform: scale(1.04)!important;
+    -webkit-transform: scale(1.04)!important;
+    transform: scale(1.04)!important;
+
+}
+
+
+.block-icon {
+
+   display: flex;
+
+
+}
+
+
+.block-btn {
+
+  display: flex;
+}
+
+
+.btn-border-under-fix:focus  {
+
+    border: none;
+    outline: none;
+
+}
+
+
+.btn-social-link {
+
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    margin: 0.2rem;
+    justify-content: center;
+    justify-items: center;
+    cursor: pointer;
+    padding-left: 1.6rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #303030;
+    transition: 0.5s;
+    border: none;
+
+}
+
+
+.btn-social-link:hover {
+
+    -moz-transform: scale(1.02)!important;
+    -ms-transform: scale(1.02)!important;
+    -webkit-transform: scale(1.02)!important;
+    transform: scale(1.02)!important;
+    color: #303030;
+
+}
+
+
+.icon-telegram:after {
+
+    background: url(../images/icon/telegram.svg) no-repeat;
+    content: "";
+    width: 28px;
+    height: 28px;
+    transition: 0.5s;
+    z-index: 1;
+    margin-top: 0.3rem;
+    margin-left: -2rem;
+    position: absolute;
+    transition: 0.5s;
+}
+
+
+.icon-vk:after {
+
+    background: url(../images/icon/vk.svg) no-repeat;
+    content: "";
+    width: 28px;
+    height: 28px;
+    transition: 0.5s;
+    z-index: 1;
+    margin-top: 0.3rem;
+    margin-left: -2rem;
+    position: absolute;
+    transition: 0.5s;
+}
+
+
+.icon-github:after {
+
+    background: url(../images/icon/github.svg) no-repeat;
+    content: "";
+    width: 28px;
+    height: 28px;
+    transition: 0.5s;
+    z-index: 1;
+    margin-top: 0.3rem;
+    margin-left: -2rem;
+    position: absolute;
+    transition: 0.5s;
+}
+
+
+.icon-mail:after {
+
+    background: url(../images/icon/mail.svg) no-repeat;
+    content: "";
+    width: 28px;
+    height: 28px;
+    transition: 0.5s;
+    z-index: 1;
+    margin-top: 0.3rem;
+    margin-left: -2.2rem;
+    position: absolute;
+    transition: 0.5s;
+}
+
+
+
+.icon-discord:after {
+
+    background: url(../images/icon/discord.svg) no-repeat;
+    content: "";
+    width: 28px;
+    height: 28px;
+    transition: 0.5s;
+    z-index: 1;
+    margin-top: 0.3rem;
+    margin-left: -2.2rem;
+    position: absolute;
+    transition: 0.5s;
+}
+
+
+.avatar {
+
+   transition: 0.4s;
+   cursor: pointer;
+
+}
+
+.avatar-mobile {
+
+   transition: 0.4s;
+   cursor: pointer;
+
+}
+
+.avatar-mobile:hover,
+.avatar:hover {
+
+    -moz-transform: scale(1.02)!important;
+    -ms-transform: scale(1.02)!important;
+    -webkit-transform: scale(1.02)!important;
+    transform: scale(1.02)!important;
+
+}
+
+@media all and (max-width: 1024px) {
+
+.avatar {
+
+  display: none;
+}
+}
+
+
+@media all and (min-width: 1024px) {
+
+.avatar-mobile {
+
+  display: none;
+  
+}
+}
+
+
+
+@media all and (max-width: 560px) {
+
+
+.block-info .icon-soft {
+
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+    padding: 0.4rem;
+
+}
+}
+
+@media all and (max-width: 1000px) {
+
+
+
+}
+
+
+
+@media all and (max-width: 770px) {
+
+
+
+.block-btn {
+
+  display: block;
+}
+
+
+.btn-social-link {
+ 
+  margin: 6px 0px 0px 0px;
+  height: 50px;
+  padding: 4px;
+  font-size: 26px;
+  padding-left: inherit;
+
+}
+}
+
+
+
+.btn-commercial {
+
+  background: #1B1B1B;
+  max-width: 800px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Patrick Hand;
+  text-align: center;
+  padding: 1rem;
+  font-size: 44px;
+  transition: 1s;
+  cursor: pointer;
+  color: white;
+
+}
+
+.btn-commercial:hover {
+
+  background-color: white;
+  color: #303030;
+  -moz-transform: scale(1.05)!important;
+  -ms-transform: scale(1.05)!important;
+  -webkit-transform: scale(1.05)!important;
+  transform: scale(1.05)!important;
+
+}
+
+
+.coupon-alert {
+
+  display: none;
+  color: white;
+  position: absolute;
+  z-index: 10;
+  font-family: Patrick Hand;
+  border-radius: 6px;
+  top: 30rem;  
+  background: rgba(22, 22, 22, 0.90);
+  padding: 1rem;
+  left: 28%;
+  right: 28%;
+
+}
+
+
+
+.coupon-field {
+
+    display: none;
+}
+
