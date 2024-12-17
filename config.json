@@ -1,0 +1,16 @@
+{
+    "sites": [
+        {
+            "link": "https://tsput.ru/faculties_and_departments/frfd/",
+            "time": 10000
+        },
+        {
+            "link": "https://tsput.ru/faculties_and_departments/ipit/",
+            "time": 20000
+        },
+        {
+            "link": "https://tsput.ru/faculties_and_departments/iiop/",
+            "time": 10000
+        }
+    ]
+}
